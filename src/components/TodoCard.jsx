@@ -1,5 +1,8 @@
+import useTodoStore from "../store/todoStore";
+
 export default function TodoCard(props) {
-  const { children, handleDeleteTodo, index } = props;
+  const { children, id } = props;
+  const handleDeleteTodo = useTodoStore((state) => state.removeTodo);
 
   return (
     <li className="todoItem">
@@ -10,7 +13,7 @@ export default function TodoCard(props) {
         </button>
         <button
           onClick={() => {
-            handleDeleteTodo(index);
+            handleDeleteTodo(id);
           }}
         >
           <i className="fa-solid fa-trash"></i>

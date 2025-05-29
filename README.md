@@ -9,3 +9,4 @@ Currently, two official plugins are available:
 
 # Based on 
 https://www.youtube.com/watch?v=82PXenL4MGg
+https://medium.com/globant/react-state-management-b0c81e0cbbf3
